@@ -15,6 +15,10 @@
 .about-page .about-page-container img {
   width: 450px;
 }
+.about-page .about-page-container video {
+  width: 450px;
+  height: 400px;
+}
 .about-page .marg {
   margin-top: 100px;
 }
@@ -23,7 +27,7 @@
   .about-page .about-page-container {
     flex-direction: column;
   }
-  .about-page .about-page-container img {
+  .about-page .about-page-container img, .about-page .about-page-container video {
     margin-top: 20px;
   }
   .about-page .marg {
@@ -31,7 +35,7 @@
   }
 }
 @media screen and (max-width: 500px) {
-  .about-page .about-page-container img {
+  .about-page .about-page-container img, .about-page .about-page-container video {
     width: 100%;
   }
 }/*# sourceMappingURL=AboutPage.css.map */
