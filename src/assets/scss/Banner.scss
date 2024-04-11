@@ -1,0 +1,33 @@
+$primaryColor: rgb(216, 0, 0);
+
+.banner-container{
+    background: url('../images/event-birt2.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    .banner-content{
+        max-width: 400px;
+        h2{
+            font-size: 32px;
+            margin: 16px 0;
+        }
+        .dash{
+            margin: auto;
+        }
+        a{
+            button{
+                &:hover{
+                    transform: translateY(-5px);
+                }
+            }
+            &:hover{
+                color: #fff;
+            }
+        }
+    }
+}

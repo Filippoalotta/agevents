@@ -1,0 +1,124 @@
+$primaryColor: rgb(216, 0, 0);
+
+.contact-page{
+    color: #000;
+    .bg-ct-section{
+        background: url('../images/hero-contact.jpg');
+        background-position: center;
+        background-size: cover;
+        height: 300px;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .contact-container{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        margin: 50px 0;
+        padding: 0 20px;
+        .info-container{
+            text-align: left;
+            .dash{
+                margin: 0;
+            }
+            .mini-section{
+                margin-top: 20px;
+                h3{
+                    margin: 0;
+                }
+                img{
+                    display: inline;
+                    width: 40px;
+                    border-radius: 50%;
+                    margin-right: 10px;
+                }
+                a{
+                    img{
+                        display: inline;
+                        width: 40px;
+                        border-radius: 50%;
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+        .form-container{
+            text-align: left;
+            .dash{
+                margin: 0;
+            }
+            form{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+                margin-top: 30px;
+                .input1{
+                    padding: 10px 15px;
+                    width: 500px;
+                    margin-bottom: 20px;
+                    background-color: #fff;
+                    color: gray;
+                    border: none;
+                    border-bottom: 1px solid gray;
+                    font-size: 18px;
+                    outline: none;
+                    &:focus{
+                        border-bottom: 1px solid $primaryColor;
+                        transition: all ease-in-out 0.3s;
+                    }
+                }
+                textarea{
+                    padding: 10px 15px;
+                    background-color: #fff;
+                    color: gray;
+                    border: none;
+                    border-bottom: 1px solid gray;
+                    width: 500px;
+                    height: 100px;
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-size: 18px;
+                    outline: none;
+                    &:focus{
+                        border-bottom: 1px solid $primaryColor;
+                        transition: all ease-in-out 0.3s;
+                    }
+                }
+                .button2{
+                    margin-top: 15px;
+                    &:hover{
+                        transform: translateY(-5px);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 800px){
+
+    .contact-page{
+        .contact-container{
+            flex-direction: column-reverse;
+            .info-container{
+                margin-top: 30px;
+            }
+            .form-container{
+                width: 90vw;
+                form{
+                   .input1{
+                        width: 100%;
+                   }
+                   textarea{
+                        width: 100%;
+                   }
+                }
+            }
+        }
+    }
+    
+}

@@ -1,0 +1,135 @@
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  background-color: #fff;
+  z-index: 1000;
+}
+header a {
+  z-index: 1001;
+}
+header a .logo {
+  height: 70px;
+}
+header .nav-desk {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .nav-desk ul li {
+  display: inline-block;
+  color: #000;
+  margin-right: 30px;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 15px;
+  font-family: fantasy;
+}
+header .nav-desk ul li a {
+  color: #000;
+  position: relative;
+}
+header .nav-desk ul li a:hover {
+  color: rgb(216, 0, 0);
+  transition: all ease-in 0.3s;
+}
+header .nav-desk a:hover {
+  color: #fff;
+}
+header .hamb {
+  z-index: 1001;
+  display: none;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  transition: all ease-in 0.3s;
+}
+header .hamb span {
+  background-color: #000;
+  display: block;
+  position: absolute;
+  height: 1px;
+  right: 0;
+}
+header .hamb span:nth-child(1) {
+  width: 100%;
+  top: 1;
+}
+header .hamb span:nth-child(2),
+header .hamb span:nth-child(3) {
+  width: 35%;
+  top: 49%;
+  height: 2px;
+}
+header .hamb span:nth-child(4) {
+  width: 60%;
+  bottom: 0;
+  height: 2px;
+}
+header .nav-mb {
+  background-color: #fff;
+  display: none;
+  transform: translateX(200%);
+}
+
+@media screen and (max-width: 1000px) {
+  header {
+    justify-content: space-between;
+    padding: 10px 40px;
+  }
+  header .nav-desk {
+    display: none;
+  }
+  header .hamb {
+    display: block;
+  }
+  header .open {
+    transform: rotate(180deg);
+  }
+  header .open span:nth-child(1),
+  header .open span:nth-child(4) {
+    display: none;
+  }
+  header .open span:nth-child(2) {
+    width: 100%;
+    transform: rotate(45deg);
+  }
+  header .open span:nth-child(3) {
+    width: 100%;
+    transform: rotate(-45deg);
+  }
+  header .nav-mb {
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  header .nav-mb ul {
+    margin: auto;
+    height: 50%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  header .nav-mb ul li {
+    font-size: 30px;
+  }
+  header .nav-mb ul li a {
+    text-decoration: none;
+    color: #000;
+  }
+  header .open-translate {
+    transform: translateX(0);
+    transition: all ease-in 0.3s;
+  }
+}/*# sourceMappingURL=Header.css.map */

@@ -1,0 +1,27 @@
+.banner-container {
+  background: url("../images/event-birt2.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.banner-container .banner-content {
+  max-width: 400px;
+}
+.banner-container .banner-content h2 {
+  font-size: 32px;
+  margin: 16px 0;
+}
+.banner-container .banner-content .dash {
+  margin: auto;
+}
+.banner-container .banner-content a button:hover {
+  transform: translateY(-5px);
+}
+.banner-container .banner-content a:hover {
+  color: #fff;
+}/*# sourceMappingURL=Banner.css.map */

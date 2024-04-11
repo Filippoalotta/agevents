@@ -1,0 +1,44 @@
+$primaryColor: rgb(216, 0, 0);
+
+.hero-container{
+    background: url('../images/event-birt2.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .hero-content{
+        max-width: 400px;
+        z-index: 300;
+        h1{
+            font-size: 32px;
+            color: #fff;
+        }
+        h1, p{
+            margin: 0;
+        }
+        .dash{
+            margin: 10px auto;
+        }
+        .button-container{
+            a{
+                button{
+                    display: inline-block;
+                    margin-top: 10px;
+                }
+                &:hover{
+                    color: #fff;
+                }
+            }
+        }
+        .button-container button:nth-child(1){
+            margin-right: 10px;
+        }
+    }
+    img{
+        height: 300px;
+    }
+}
