@@ -1,0 +1,55 @@
+$primaryColor: rgb(216, 0, 0);
+
+footer{
+    background-color: #000;
+    padding: 50px 30px 10px 30px;
+    .footer-content{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        .nav-footer{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            text-align: left;
+            .logo-footer{
+                width: 130px;
+                background-color: #fff;
+            }
+            .goog-logo{
+                width: 180px;
+            }
+            .trip-logo{
+                width: 200px;
+            }
+            h4{
+                margin: 0;
+                text-transform: uppercase;
+            }
+        }
+    }
+    .footer-privacy{
+        text-align: center;
+    }
+    .footer-privacy div:first-child{
+        border-top: 1px solid rgb(193, 193, 193);
+        padding-top: 10px;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 810px){
+    footer{
+        .footer-content{
+            flex-direction: column;
+            align-items: center;
+            .nav-footer{
+                margin-top: 30px;
+                text-align: center;
+                .logo-footer{
+                    width: 130px;
+                }
+            }
+        }
+    }
+}

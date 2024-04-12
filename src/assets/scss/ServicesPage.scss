@@ -1,0 +1,43 @@
+.services-page{
+    text-align: center;
+    h1{
+        color: #000;
+    }
+    .dash{
+        margin: auto;
+    }
+    .services-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 50px;
+        .card{
+            display: flex;
+            flex-direction: column;
+            color: #000;
+            max-width: 350px;
+            text-align: center;
+            padding: 30px;
+            margin-top: 50px;
+            img{
+                width: 100%;
+            }
+            h3{
+                margin-bottom: 0;
+                text-transform: uppercase;
+            }
+            button{
+                a{
+                    &:hover{
+                        color: #fff;
+                    }
+                }
+                &:hover{
+                    transform: translateY(-5px);
+                }
+            }
+        }
+    }
+}
