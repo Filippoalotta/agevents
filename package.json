@@ -1,8 +1,4 @@
 {
-<<<<<<< HEAD
-  "homepage": "https://filippoalotta.github.io/agevents/",
-=======
->>>>>>> c7ee35f194fe5a3ceb4bb73dab6553c67c2bf490
   "name": "agevent",
   "private": true,
   "version": "0.0.0",
@@ -10,11 +6,6 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-<<<<<<< HEAD
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
-=======
->>>>>>> c7ee35f194fe5a3ceb4bb73dab6553c67c2bf490
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
