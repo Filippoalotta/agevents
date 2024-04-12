@@ -70,6 +70,7 @@ body {
   text-transform: uppercase;
   font-weight: 600;
   background-color: rgb(216, 0, 0);
+  color: #fff;
   cursor: pointer;
 }
 .button2:hover {
