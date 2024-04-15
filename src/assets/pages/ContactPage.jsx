@@ -1,4 +1,5 @@
 import '../scss/ContactPage.scss'
+import '../scss/index.scss'
 import wa from '../images/whatsapp-icon.png'
 import ig from '../images/ig-icon.png'
 import Header from '../components/Header';
