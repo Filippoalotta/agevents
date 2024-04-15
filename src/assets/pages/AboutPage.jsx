@@ -21,7 +21,7 @@ function AboutPage(){
                 </div>
                 <Banner></Banner>
                 <div className="about-page-container marg">
-                    <video src={mission} muted autoPlay loop></video>
+                    <video src={mission} disablePictureInPicture muted autoPlay loop></video>
                     <div className="about-page-content">
                         <h2>La nostra missione</h2>
                         <div className="dash"></div>
