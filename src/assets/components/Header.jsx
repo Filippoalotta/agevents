@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom';
 import '../scss/Header.scss'
 import logo from '../images/agevents-logo-this.png'
@@ -6,6 +6,14 @@ import logo from '../images/agevents-logo-this.png'
 function Header(){
 
     const [hambOpen, setHambOpen] = useState(true);
+
+    useEffect(() => {
+        if (!hambOpen) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = 'auto';
+        }
+    }, [hambOpen]);
 
     const handleHambOpen = ()=> {
         setHambOpen(!hambOpen);
