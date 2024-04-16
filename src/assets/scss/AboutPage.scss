@@ -15,10 +15,6 @@ $primaryColor: rgb(216, 0, 0);
         img{
             width: 450px;
         }
-        video{
-            width: 450px;
-            height: 400px;
-        }
     }
     .marg{
         margin-top: 100px;
@@ -30,7 +26,7 @@ $primaryColor: rgb(216, 0, 0);
     .about-page{
         .about-page-container{
             flex-direction: column;
-            img, video{
+            img{
                 margin-top: 20px;
             }
         }
@@ -44,7 +40,7 @@ $primaryColor: rgb(216, 0, 0);
 
     .about-page{
         .about-page-container{
-            img, video{
+            img{
                 width: 100%;
             }
         }

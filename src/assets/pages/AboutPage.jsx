@@ -1,6 +1,6 @@
 import '../scss/AboutPage.scss'
 import aboutImg from '../images/about-img.png'
-import mission from '../images/VideoMission.mp4'
+import mission from '../images/our-mission.jpg'
 import Header from '../components/Header';
 import Banner from '../components/Banner';
 import Footer from '../components/Footer';
@@ -21,7 +21,7 @@ function AboutPage(){
                 </div>
                 <Banner></Banner>
                 <div className="about-page-container marg">
-                    <video src={mission} disablePictureInPicture muted autoPlay loop></video>
+                    <img src={mission} alt="" />
                     <div className="about-page-content">
                         <h2>La nostra missione</h2>
                         <div className="dash"></div>
