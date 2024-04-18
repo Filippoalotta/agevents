@@ -68,7 +68,7 @@ function ContactPage(){
                             <input type="email" className='input1' value={email} name="email" id="email" placeholder='Inserisci la tua email' autoComplete='off' onChange={(e) => setEmail(e.target.value)} required/>
                             <input type="text" className='input1' value={telephone} name="telephone" id="telephone" placeholder='Inserisci il tuo numero' autoComplete='off' onChange={(e) => setTelephone(e.target.value)} required/>
                             <textarea name="message" id="message" value={message} placeholder='Scrivici un messaggio' autoComplete='off' onChange={(e) => setMessage(e.target.value)} required></textarea>
-                            <input type="submit" value="Invia messaggio" className='button2'/>
+                            <button type="submit" className='button2'>Invia messaggio</button>
                         </form>
                     </div>
                 </div>
