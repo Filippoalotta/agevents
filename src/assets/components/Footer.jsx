@@ -1,7 +1,5 @@
 import '../scss/Footer.scss'
 import logo from '../images/agevents-white.png'
-import trustLogo from '../images/trustpilot-white.png'
-import googleLogo from '../images/google-white.png'
 
 function Footer(){
 
@@ -27,8 +25,8 @@ function Footer(){
                     </div>
                     <div className='nav-footer'>
                         <h4>Leggi le recensioni su</h4>
-                        <a href="#"><img src={googleLogo} alt="Google logo" className='goog-logo' /></a>
-                        <a href="#"><img src={trustLogo} alt="Tripadvisor logo" className='trip-logo' /></a>
+                        <a href="https://it.trustpilot.com/review/agevent.netlify.app" rel='noopener' target='_blank'><span>Trustpilot</span></a>
+                        <a href="https://www.instagram.com/stories/highlights/18212970154220364/" rel='noopener' target='_blank'><span>Instagram</span></a>
                     </div>
                 </div>
                 <div className="footer-privacy">
