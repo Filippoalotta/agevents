@@ -32,6 +32,7 @@ function Footer(){
                 <div className="footer-privacy">
                     <div>Copyright ©2024 AGevent. All Rights Reserved.</div>
                     <div>Web Development by <a href="https://filippoalotta.netlify.app/">Filippo Alotta</a></div>
+                    <div><a href="https://www.iubenda.com/privacy-policy/92328308" className="iubenda-white iubenda-noiframe iubenda-embed iubenda-noiframe " title="Privacy Policy ">Privacy Policy</a><a href="https://www.iubenda.com/privacy-policy/92328308/cookie-policy" className="iubenda-white iubenda-noiframe iubenda-embed iubenda-noiframe " title="Cookie Policy ">Cookie Policy</a></div>
                 </div>
             </footer>
         </>
